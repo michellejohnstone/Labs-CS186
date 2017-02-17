@@ -7,6 +7,7 @@ var labsix = require('../controllers/labsix');
 router.get('/', ctrlMain.index);
 
 /* GET page one and page two. */
-router.get('/pageone', labsix.index); //here is what you want the uesr to type in, not necessairily the name of the html/jade file
-router.get('/pagetwo', labsix.index);
+router.get('/pageone', labsix.pageone); //here is what you want the uesr to type in, not necessairily the name of the html/jade file
+router.get('/pagetwo', labsix.pagetwo);
+
 module.exports = router;
